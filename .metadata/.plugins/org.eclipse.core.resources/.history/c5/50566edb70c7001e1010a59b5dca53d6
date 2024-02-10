@@ -1,0 +1,19 @@
+package com.cos.chatapp;
+
+import java.time.LocalDateTime;
+
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import lombok.Data;
+
+@Data
+@Document(collection ="Chat")
+public class Chat {
+	@id
+	private String id;
+	private String msg;
+	private String sender;
+	private String receiver;
+	
+	private LocalDateTime createdAt;
+}

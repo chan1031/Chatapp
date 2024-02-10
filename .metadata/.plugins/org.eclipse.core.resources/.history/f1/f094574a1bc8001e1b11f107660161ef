@@ -1,0 +1,10 @@
+package com.cos.chatapp;
+
+import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
+
+import reactor.core.publisher.Flux;
+
+//ReactiveMongoRepository를 상속하여 비동기적인 MongoDB와의 상호작용을 위함
+public interface ChatRepository extends ReactiveMongoRepository<Chat,String>{
+	Flux<Chat> mFindBySender(String sender,String receiver); //Flux (흐름)
+}

@@ -8,13 +8,14 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import lombok.Data;
 
 @Data
-@Document(collection ="Chat")
+@Document(collection ="chat")
 public class Chat {
 	@Id
 	private String id;
 	private String msg;
 	private String sender;
 	private String receiver;
+	private Integer roomNum; // 방 번호
 	
 	private LocalDateTime createdAt;
 }

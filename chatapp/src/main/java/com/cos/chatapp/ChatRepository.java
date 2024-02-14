@@ -21,4 +21,9 @@ public interface ChatRepository extends ReactiveMongoRepository<Chat,String>{
 	//Flux는 여러 개의 데이터를 비동기적으로, 논블로킹 방식으로 처리할 수 있습니다. 
 	//주로 비동기적인 이벤트 스트림이나 데이터 스트림을 다룰 때 사용
 	Flux<Chat> mFindBySender(String sender,String receiver); 
+	
+	
+	@Tailable
+	@Query("{roomNum:?0}")
+	Flux<Chat> mFindByRoomNum(Integer roomNum);
 }

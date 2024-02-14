@@ -2,4 +2,9 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="lombok.RequiredArgsConstructor"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.http.MediaType"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+    <fullyQualifiedTypeName name="reactor.core.scheduler.Schedulers"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
 </qualifiedTypeNameHistroy>
